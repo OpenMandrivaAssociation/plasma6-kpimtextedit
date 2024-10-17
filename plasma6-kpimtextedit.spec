@@ -20,7 +20,7 @@ Source0:	https://invent.kde.org/pim/kpimtextedit/-/archive/%{gitbranch}/kpimtext
 Source0: http://download.kde.org/%{ftpdir}/release-service/%{version}/src/kpimtextedit-%{version}.tar.xz
 %endif
 Summary: Text editing library for KDE PIM
-URL: http://kde.org/
+URL: https://kde.org/
 License: GPL
 Group: System/Libraries
 BuildRequires: cmake(ECM)
