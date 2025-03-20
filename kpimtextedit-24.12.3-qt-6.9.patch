@@ -1,0 +1,18 @@
+diff -up kpimtextedit-24.12.3/src/grantleebuilder/markupdirector.cpp.omv~ kpimtextedit-24.12.3/src/grantleebuilder/markupdirector.cpp
+--- kpimtextedit-24.12.3/src/grantleebuilder/markupdirector.cpp.omv~	2025-03-20 22:04:35.571279455 +0100
++++ kpimtextedit-24.12.3/src/grantleebuilder/markupdirector.cpp	2025-03-20 22:04:45.449980659 +0100
+@@ -545,12 +545,12 @@ void MarkupDirector::processClosingEleme
+             case SpanBackground:
+                 m_builder->endBackground();
+                 // Clear background otherwise if we select 2 lines with same color it will not applied. bug #442416
+-                d->m_openBackground = {};
++                d->m_openBackground = QBrush{};
+                 break;
+             case SpanForeground:
+                 m_builder->endForeground();
+                 // Clear foreground text color otherwise if we select 2 lines with same text color it will not applied. bug #442416
+-                d->m_openForeground = {};
++                d->m_openForeground = QBrush{};
+                 break;
+             case Anchor:
+                 m_builder->endAnchor();

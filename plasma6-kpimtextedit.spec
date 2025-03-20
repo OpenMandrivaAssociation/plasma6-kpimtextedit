@@ -53,6 +53,9 @@ BuildRequires: cmake(Qt6TextToSpeech)
 BuildRequires: doxygen
 BuildRequires: qt6-qttools-assistant
 
+%patchlist
+kpimtextedit-24.12.3-qt-6.9.patch
+
 %description
 Text editing library for KDE PIM.
 
